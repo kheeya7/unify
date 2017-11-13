@@ -1,11 +1,8 @@
 import $ from 'jquery';
+import { Rootpage } from './rootpage/view.js';
 
-function component() {
-    var element = $('<div>');
+const rootpage = new Rootpage();
 
-    element.html('Unify version 2');
+rootpage.render();
 
-    return element;
-}
-
-$('body').append(component());
+$('body').append(rootpage.$el);
