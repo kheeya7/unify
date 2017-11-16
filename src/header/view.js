@@ -1,8 +1,9 @@
 import Backbone from 'backbone';
+import template from './template.pug';
 
 export class Header extends Backbone.View {
     render() {
-        this.$el.html('This is header');
+        this.$el.html(template());
 
         return this;
     }
