@@ -15694,7 +15694,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".rootpage-container .section-content {\n  min-height: 300px;\n  background-color: #ccc;\n  margin: 20px 0;\n}\n", ""]);
+exports.push([module.i, ".rootpage-container .header-section-content .pre-navbar-header {\n  height: 280px;\n  background-color: tomato;\n}\n.rootpage-container .header-section-content nav {\n  width: 100%;\n  position: static;\n  top: -32px;\n}\n.rootpage-container .header-section-content nav.affix {\n  position: fixed;\n  top: 0;\n  z-index: 10;\n  -webkit-transition: all 0.6s ease-in-out;\n}\n.rootpage-container .section-content {\n  min-height: 300px;\n  background-color: #ccc;\n  margin: 20px 0;\n}\n", ""]);
 
 // exports
 
@@ -17358,7 +17358,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscor
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"rootpage-container container\"\u003E\u003Cdiv class=\"header-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"overview-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"problem-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"research-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"solution-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"conclusion-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"reflection-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"workCited-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer-section-container\"\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"rootpage-container\"\u003E\u003Cdiv class=\"header-section-container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"overview-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"problem-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"research-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"solution-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"conclusion-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"reflection-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"workCited-section-container container\"\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer-section-container\"\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17374,14 +17374,24 @@ module.exports = template;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_backbone__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_backbone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_backbone__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_pug__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_pug___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_pug__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_pug__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template_pug___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__template_pug__);
+
 
 
 
 class Header extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
     render() {
-        this.$el.html(__WEBPACK_IMPORTED_MODULE_1__template_pug___default()());
+        this.$el.html(__WEBPACK_IMPORTED_MODULE_2__template_pug___default()());
+
+        this.$('nav').affix({
+            offset:{  
+                // TODO: we need to fix this so that it uses the top-section height              
+                top : 280 - this.$('nav').height()
+            }
+        })
 
         return this;
     }
@@ -17396,7 +17406,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"header-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'header') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"header-section-content\"\u003E\u003Cdiv class=\"pre-navbar-header\"\u003E\u003C\u002Fdiv\u003E\u003Cnav class=\"navbar navbar-default\"\u003E\u003Cdiv class=\"container-fluid\"\u003E\u003Cdiv class=\"navbar-header\"\u003E\u003Cbutton class=\"navbar-toggle collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\"\u003E\u003Cspan class=\"sr-only\"\u003E" + (pug.escape(null == (pug_interp = 'Toggle navigation') ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003Cspan class=\"icon-bar\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"icon-bar\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"icon-bar\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fbutton\u003E\u003Ca class=\"navbar-brand\" href=\"#\"\u003E" + (pug.escape(null == (pug_interp = 'Unify') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\"\u003E\u003Cdiv class=\"ul nav navbar-nav\"\u003E\u003Cli class=\"active\"\u003E\u003Ca href=\"#overview\"\u003E" + (pug.escape(null == (pug_interp = 'Overview') ? "" : pug_interp)) + "\u003Cspan class=\"sr-only\"\u003E" + (pug.escape(null == (pug_interp = '(current)') ? "" : pug_interp)) + "\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"#problem\"\u003E" + (pug.escape(null == (pug_interp = 'Problem') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"#research\"\u003E" + (pug.escape(null == (pug_interp = 'Research') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"#solution\"\u003E" + (pug.escape(null == (pug_interp = 'Solution') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"#conclusion\"\u003E" + (pug.escape(null == (pug_interp = 'Conclusion') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"#reflection\"\u003E" + (pug.escape(null == (pug_interp = 'Reflection') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli\u003E\u003Ca href=\"#work-cited\"\u003E" + (pug.escape(null == (pug_interp = 'WorkCited') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Fdiv\u003E\u003Cul class=\"nav navbar-nav navbar-right\"\u003E\u003Cli\u003E\u003Ca href=\"#\"\u003E" + (pug.escape(null == (pug_interp = 'Link') ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fnav\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17428,7 +17438,7 @@ class Overview extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"overview-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'overview') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"overview-section-content row section-content\" id=\"overview\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'overview') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17460,7 +17470,7 @@ class Problem extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"problem-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'problem') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"problem-section-content row section-content\" id=\"problem\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'problem') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17492,7 +17502,7 @@ class Research extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"research-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'research') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"research-section-content row section-content\" id=\"research\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'research') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17524,7 +17534,7 @@ class Solution extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"solution-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'solution') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"solution-section-content row section-content\" id=\"solution\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'solution') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17588,7 +17598,7 @@ class Reflection extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reflection-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'reflection') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"reflection-section-content row section-content\" id=\"reflection\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'reflection') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -17619,7 +17629,7 @@ class WorkCited extends __WEBPACK_IMPORTED_MODULE_0_backbone___default.a.View {
 
 var pug = __webpack_require__(2);
 
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"workCited-section-content row section-content\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'workCited') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cdiv class=\"workCited-section-content row section-content\" id=\"work-cited\"\u003E\u003Cdiv class=\"col-sm-12\"\u003E" + (pug.escape(null == (pug_interp = 'workCited') ? "" : pug_interp)) + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
