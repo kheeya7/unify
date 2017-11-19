@@ -1,10 +1,12 @@
 import Backbone from 'backbone';
 import $ from 'jquery';
 import template from './template.pug';
+import sampleBackground from './test_background.png';
 
 export class Header extends Backbone.View {
+
     render() {
-        this.$el.html(template());
+        this.$el.html(template({sampleBackground}));
 
         this.$('nav').affix({
             offset:{  
