@@ -15,14 +15,14 @@ export class Rootpage extends Backbone.View {
         this.$el.html(template());
 
         const header = new Header();
-        const overview = new Overview();
+        const overview = new Overview({ el: this.$('.overview-section-container') });
         const problem = new Problem();
         const research = new Research();
         const solution = new Solution();
         const conclusion = new Conclusion();
         const reflection = new Reflection();
         const workCited = new WorkCited();
-        const footer = new Footer();
+        const footer = new Footer({ el: this.$('.footer-section-container') });
 
         header.render();
         overview.render();
@@ -35,14 +35,14 @@ export class Rootpage extends Backbone.View {
         footer.render();
 
         this.$('.header-section-container').append(header.$el);
-        this.$('.overview-section-container').append(overview.$el);
+        // this.$('.overview-section-container').append(overview.$el);
         this.$('.problem-section-container').append(problem.$el);
         this.$('.research-section-container').append(research.$el);
         this.$('.solution-section-container').append(solution.$el);
         this.$('.conclusion-section-container').append(conclusion.$el);
         this.$('.reflection-section-container').append(reflection.$el);
         this.$('.workCited-section-container').append(workCited.$el);
-        this.$('.footer-section-container').append(footer.$el);
+        // this.$('.footer-section-container').append(footer.$el);
 
         return this;
     }
