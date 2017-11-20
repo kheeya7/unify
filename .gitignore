@@ -4,3 +4,4 @@ dist/*.svg
 dist/*.png
 dist/*.jpg
 dist/*.jpeg
+.vscode
