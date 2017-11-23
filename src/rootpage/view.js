@@ -1,13 +1,13 @@
 import Backbone from 'backbone';
 import template from './template.pug';
 import { Header } from '../header/view.js';
-import { Overview } from '../overview/view.js';
-import { Problem } from '../problem/view.js';
-import { Research } from '../research/view.js';
-import { Solution } from '../solution/view.js';
-import { Conclusion } from '../conclusion/view.js';
-import { Reflection } from '../reflection/view.js';
-import { WorkCited } from '../work-cited/view.js';
+import { Overview } from '../sections/overview/view.js';
+import { Problem } from '../sections/problem/view.js';
+import { Research } from '../sections/research/view.js';
+import { Solution } from '../sections/solution/view.js';
+import { Conclusion } from '../sections/conclusion/view.js';
+import { Reflection } from '../sections/reflection/view.js';
+import { WorkCited } from '../sections/work-cited/view.js';
 import { Footer } from '../footer/view.js';
 
 export class Rootpage extends Backbone.View {
