@@ -4,6 +4,8 @@ import huntImage1 from './hunt-image1.jpg';
 import huntImage2 from './hunt-image2.jpg';
 import huntImage3 from './hunt-image3.jpg';
 import personaImage1 from './persona.png';
+import chatGroupImage from './paperproto-chatgroup.jpg';
+import landingImage from './paperproto-landing.jpg';
 
 export class Research extends Backbone.View {
     render() {
@@ -11,7 +13,9 @@ export class Research extends Backbone.View {
             huntImage1,
             huntImage2,
             huntImage3,
-            personaImage1
+            personaImage1,
+            chatGroupImage,
+            landingImage
         }));
 
         return this;

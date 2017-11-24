@@ -18,5 +18,63 @@
             p= 'The archetype of this persona is an educator. She is a member of FemTechNet who wants her students to have strong connections with each other. In the interview with Cricket Keating, she stated, "I was trying to figure out how to get more student involvement in the governance of FemTechNet...those hierarchies would be to break down with the spirits both the feminist\'s spirit and the critical pedagogical spirit" (Keating). The stakeholder wants connection mechanism to be decentralized but at the same time, she wants connections among her students to be active and strong.'
             img(src=personaImage1, width='100%')
         .other-persona
-    .data-and-affordance
+    .data-and-affordance.container
         H3= 'Data and Affordance'
+        .data-and-affordance-data-part.row
+            p= 'To make a successful and innovative product, the designers need to determine the range of data to support the heuristic approach for design decisions. In addition, the designers should consider the affordance of the product to create a better and more natural user experience.'
+            .data-diagram-data.col-sm-7.well           
+                p= 'Data'
+                .data-diagram-user-data.col-sm-6
+                    p= 'User Data'
+                    .col-sm-6
+                        table.table
+                            tr
+                                th= 'User Information'
+                            tr
+                                td
+                                    p= 'Name'
+                                    p= 'E-mail'
+                                    p= 'Bio'
+                                    p= 'Type of Member'
+                                    p= 'Occupation'
+                                    p= 'Field of Interest'
+                    .col-sm-6
+                        table.table
+                            tr
+                                th= 'Acquired Data'
+                            tr
+                                td
+                                    p= 'Interaction information'
+                                    p= '(People, articles, banners...)'
+                                    p= 'Application usage'
+                .data-diagram-contents-data.col-sm-6
+                    p= 'Contents Data'
+                    .col-sm-6
+                        table.table
+                            tr
+                                th= 'Static Data'
+                            tr
+                                td
+                                    p= 'Navigations'
+                                    p= 'Header'
+                                    p= 'Icons'
+                                    p= 'Banners'
+                    .col-sm-6
+                        table.table
+                            tr
+                                th= 'Dynamic Data'
+                            tr
+                                td
+                                    p= 'Messages'
+                                    p= 'E-mail'
+                                    p= 'Comments'
+                                    p= 'Job posts'
+            .data-diagram-text.col-sm-5
+                p= 'The data of the product would be categorized into two big sub-categories: \'user data\' and \'contents data\'. Under the user data subcategory, there is user information that users voluntarily provide in the process of sign-up and the setting options. Also, there is acquired data, which the data acquired by learning user behavior that the user does not explicitly provide. Under the contents data subcategory, there is static data that can include a navigation, a banner, an icon, etc., created by the designers. Dynamic data is created by users such as messages, e-mails, comments, job post, etc.'
+        .data-and-affordance-affordance-part.row
+            h4= 'Affordance'
+            .affordance-text.col-sm-7
+                p= 'Considering affordances help the designers to specify the range of potential activities of users. Our team decided to use the card layout, which is the type of presenting information with intuitive images. In our application, the list of the chat rooms with only texts can be not intuitive for users to recognize what kind of chat rooms they are. However, with some self-explanatory images and short descriptions with the buttons, the users will get what they want more easily without having to think.'
+            .affordance-images.col-sm-5
+                img.col-sm-6(src=chatGroupImage)
+                img.col-sm-6(src=landingImage)
