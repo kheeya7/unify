@@ -1,10 +1,16 @@
-import $ from 'jquery';
 import 'bootstrap-webpack';
+import jQuery from 'jquery';
 import './styles/index.less';
 import { Rootpage } from './rootpage/view.js';
 
-const rootpage = new Rootpage();
+window.$ = window.jQuery = jQuery;
+
+const rootpage = new Rootpage({
+    el: $('.unify-app')
+});
 
 rootpage.render();
 
-$('body').append(rootpage.$el);
+$(document).ready(() => {
+    rootpage.initializeScripts();
+});
