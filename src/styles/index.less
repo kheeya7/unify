@@ -31,9 +31,16 @@ body {
     }
     .header-section-content {
         .pre-navbar-header {
-                height: 280px;
-                background-color: skyblue;
+            height: 350px;
+            background-color: white;
+            overflow: hidden;
+            text-align: center;
+            img {
+                width: 260px;
+                margin-right: 10px;
+                margin-left: 10px;
             }
+        }
         nav {
             width: 100%;
             position: static;
@@ -45,6 +52,47 @@ body {
             z-index:10;
             -webkit-transition: all .6s ease-in-out;
         } 
+    }
+
+    .overview-section-content {
+        .section-diagram {
+            background: rgb(221, 209, 215);
+            padding: 20px;
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    .problem-section-content {
+        .interview {
+            .problems-diagram {
+                background: rgb(221, 209, 215);
+                padding: 20px;
+                img {
+                    width: 60px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .research-section-content {
+        .interview-pic {
+            height: 420px;
+            background: no-repeat center center fixed; 
+            // -webkit-background-size: cover;
+            // -moz-background-size: cover;
+            // -o-background-size: cover;
+            // background-size: cover;
+        }
+        .other-persona {
+            background: rgb(221, 209, 215);
+            padding: 20px;
+            img {
+                margin: 5px;
+            }
+        }
     }
     
     .section-content{

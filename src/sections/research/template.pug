@@ -1,23 +1,47 @@
 .research-section-content.row.section-content#research
+    .container-fluid.interview-pic(style='background-image: url(' + interviewPic + ')')
     h2.section-title= 'Research'
     .hunt-statement.container
         h3= 'Hunt Statement'
         p= 'Before I started my research, I wrote the hunt statement to set the goal of what I hope to accomplish through the user research.'
         p= 'I am going to figure out how all the communities related FemTechNet communicate with each other so that I can identify the key factors that enhance or hinder the interaction within communities.'
-    .container-fluid
-        .row
-            .col-sm-4.huntstatement-photo
-                img(src=huntImage1)
-            .col-sm-4.huntstatement-photo
-                img(src=huntImage2)
-            .col-sm-4.huntstatement-photo
-                img(src=huntImage3)
     .defining-users.container
-        H3= 'Defining Users (Personas)'
-        .main-persona
+        .main-persona-description.col-sm-6
+            H3= 'Defining Users (Personas)'
             p= 'The archetype of this persona is an educator. She is a member of FemTechNet who wants her students to have strong connections with each other. In the interview with Cricket Keating, she stated, "I was trying to figure out how to get more student involvement in the governance of FemTechNet...those hierarchies would be to break down with the spirits both the feminist\'s spirit and the critical pedagogical spirit" (Keating). The stakeholder wants connection mechanism to be decentralized but at the same time, she wants connections among her students to be active and strong.'
+        .main-persona-image.col-sm-6
             img(src=personaImage1, width='100%')
-        .other-persona
+    .other-persona.container
+        .col-sm-3
+            img(src=personaPic1)
+            .text-weight-bold= 'Susie Student'
+            p= '"I am interested in Learning more about feminism and women in tech"'
+            ul.text-left= 'Goals'
+                li= 'Connect with other FemTechNet students and women in tech'
+                li= 'Get a job as a designer'
+        .col-sm-3
+            img(src=personaPic2)
+            .text-weight-bold= 'Andrea Designer'
+            p= '"Looking to simplify the job searching process"'
+            ul.text-left= 'Goals'
+                li= 'Expand with new connections'
+                li= 'Engage in more professional events and organizations'
+        .col-sm-3
+            img(src=personaPic3)
+            .text-weight-bold= 'Polly Organizer'
+            p= '"I\'d like to have projects done correctly."'
+            ul.text-left= 'Goals'
+                li= 'Have seemless communication'
+                li= 'Get connected with other feminist organization'
+        .col-sm-3
+            img(src=personaPic4)
+            .text-weight-bold= 'Ellie Experienced'
+            p= '"I want to make more connections in the business and tech field"'
+            ul.text-left= 'Goals'
+                li= 'Get people to use her web consulting'
+                li= 'Find helpful meet-ups to get more connections'
+        .row.text-center
+            p= '<Other Personas from team members>'
     .data-and-affordance.container
         H3= 'Data and Affordance'
         .data-and-affordance-data-part.row
