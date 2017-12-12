@@ -10,7 +10,7 @@ import personaPic1 from './pic-susie.png';
 import personaPic2 from './pic-andrea.png';
 import personaPic3 from './pic-polly.png';
 import personaPic4 from './pic-ellie.png';
-import interviewPic from './1st-interview-pic-color-500.jpg';
+import interviewPic from './interviewpictures1920x900.jpg';
 
 export class Research extends Backbone.View {
     render() {
