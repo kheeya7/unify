@@ -17,7 +17,7 @@
 }
 
 @accent-color-light: rgb(251, 239, 245);
-@accent-color: value;
+@accent-color: rgb(252, 123, 89);
 @accent-color-dark: rgb(200, 150, 165);
 
 
@@ -77,6 +77,29 @@ body {
             width: 100%;
             position: static;
             top: -32px;
+            .navbar-header {
+                font-family: 'Satisfy Regular';
+            }
+            li {
+                a {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+            li.active {
+                a {
+                    border-width: 0px 0px 3px 0px;
+                    border-color: @accent-color;
+                    border-style: solid;
+                }                
+            }
+            li:hover {
+                a {
+                    border-width: 0px 0px 3px 0px;
+                    border-color: @accent-color;
+                    border-style: solid;
+                }
+            }
         }    
         nav.affix {
             position: fixed;
