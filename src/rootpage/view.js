@@ -38,6 +38,6 @@ export class Rootpage extends Backbone.View {
     }
 
     initializeScripts() {
-        $('body').scrollspy({ target: '.navbar'});
+        $('body').scrollspy({ target: '.navbar' });
     }
 }
