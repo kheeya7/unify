@@ -1,5 +1,7 @@
 .research-section-content.row.section-content#research
-    .container-fluid.interview-pic(style='background-image: url(' + interviewPic + ')')
+    .container-fluid.interview-pic.text-center(style='background-image: url(' + interviewPic + ')')
+        .col-sm-4
+        .photo-description.col-sm-4= 'This photo was taken by Kate Sohng during the interview'
     h2.section-title= 'Research'
     .hunt-statement.container
         h3= 'Hunt Statement'
@@ -45,7 +47,7 @@
         H3= 'Data and Affordance'
         .data-and-affordance-data-part.row
             p= 'To make a successful and innovative product, the designers need to determine the range of data to support the heuristic approach for design decisions. In addition, the designers should consider the affordance of the product to create a better and more natural user experience.'
-            .data-diagram-data.col-sm-7.well           
+            .data-diagram-data.col-sm-7.well
                 p= 'Data'
                 .data-diagram-user-data.col-sm-6
                     p= 'User Data'
