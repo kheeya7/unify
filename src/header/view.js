@@ -7,7 +7,6 @@ import headerImage2 from './header-image2.png';
 import headerImage3 from './header-image3.png';
 
 export class Header extends Backbone.View {
-
     render() {
         this.$el.html(template({
             sampleBackground,

@@ -1,7 +1,7 @@
 import Backbone from 'backbone';
 import template from './template.pug';
 import interviewPhoto from './interview_pic.jpg';
-import wordCloud from './word.png';
+import wordCloud from './word.jpg';
 import icon1 from './icon-complexity.png';
 import icon2 from './icon-losingnetwork.png';
 
