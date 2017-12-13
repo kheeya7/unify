@@ -1,56 +1,69 @@
 .research-section-content.row.section-content#research
     .container-fluid.interview-pic.text-center(style='background-image: url(' + interviewPic + ')')
         .col-sm-4
-        .photo-description.col-sm-4= 'This photo was taken by Kate Sohng during the interview'
+        .photo-description.col-sm-4= 'These photos were taken by Kate Sohng during the interview.'
     h2.section-title= 'Research'
     .hunt-statement.container
-        h3= 'Hunt Statement'
-        p= 'I am going to figure out how all the communities related FemTechNet communicate with each other so that I can identify the key factors that enhance or hinder the interaction within communities.'
+        h3.h3-no-top-margin= 'Hunt Statement'
+        p= 'I am going to figure out how all the communities related to FemTechNet communicate with each other so that I can identify the key factors that enhance or hinder the interaction within communities.'
     .defining-users.container
-        .main-persona-description.col-sm-6
-            H3= 'Defining Users (Personas)'
-            p= 'During the ethnography interview, one of the stakeholders stated, "I was trying to figure out how to get more student involvement in the governance of FemTechNet...those hierarchies would be to break down with the spirits both the feminist\'s spirit and the critical pedagogical spirit" (Keating). The stakeholder wants the connection mechanism in FemTechNet to be decentralized and, she wants connections among her students to be active and strong in the network. Therefore, the archetype of this persona is an educator and she represents a group of people who care educating people.'
-        .main-persona-image.col-sm-6
-            img.clickToZoomImg(src=personaImage1, data-action='zoom' width='100%')
+        .row
+            .main-persona-description.col-sm-6
+                H3= 'Defining Users (Personas)'
+                p= 'During the ethnography interview, one of the stakeholders stated, "I was trying to figure out how to get more student involvement in the governance of FemTechNet...those hierarchies would be to break down with the spirits both the feminist\'s spirit and the critical pedagogical spirit" (Keating). The stakeholder wants the connection mechanism in FemTechNet to be decentralized and, she wants connections among her students to be active and strong in the network. Therefore, the archetype of this persona is an educator and she represents a group of people who care to educate people.'
+            .main-persona-image.col-sm-6
+                img.clickToZoomImg(src=personaImage1, data-action='zoom' width='100%')
     .other-persona.container.diagram-container
         .col-sm-3
-            img(src=personaPic1)
-            .text-weight-bold= 'Susie Student'
-            p= '"I am interested in Learning more about feminism and women in tech"'
+            .text-center
+                img(src=personaPic1)
+                p
+                    strong= 'Susie Student'
+            p= '"I am interested in Learning more about feminism and women in tech."'
             ul.text-left= 'Goals'
                 li= 'Connect with other FemTechNet students and women in tech'
                 li= 'Get a job as a designer'
         .col-sm-3
-            img(src=personaPic2)
-            .text-weight-bold= 'Andrea Designer'
-            p= '"Looking to simplify the job searching process"'
+            .text-center
+                img(src=personaPic2)
+                p 
+                    strong= 'Andrea Designer'
+            p= '"Looking to simplify the job searching process."'
             ul.text-left= 'Goals'
                 li= 'Expand with new connections'
                 li= 'Engage in more professional events and organizations'
         .col-sm-3
-            img(src=personaPic3)
-            .text-weight-bold= 'Polly Organizer'
+            .text-center
+                img(src=personaPic3)
+                p
+                    strong= 'Polly Organizer'
             p= '"I\'d like to have projects done correctly."'
             ul.text-left= 'Goals'
                 li= 'Have seemless communication'
                 li= 'Get connected with other feminist organization'
         .col-sm-3
-            img(src=personaPic4)
-            .text-weight-bold= 'Ellie Experienced'
-            p= '"I want to make more connections in the business and tech field"'
+            .text-center
+                img(src=personaPic4)
+                p
+                    strong= 'Ellie Experienced'
+            p= '"I want to make more connections in the business and tech field."'
             ul.text-left= 'Goals'
                 li= 'Get people to use her web consulting'
                 li= 'Find helpful meet-ups to get more connections'
         .row.text-center
-            p= '<Other Personas from team members>'
+            h3= '<Other Personas from team members>'
     .data-and-affordance.container
-        H3= 'Data and Affordance'
+        .row
+            h3= 'Data and Affordance'
         .data-and-affordance-data-part.row
             p= 'To make a successful and innovative product, the designers need to determine the range of data to support the heuristic approach for design decisions. In addition, the designers should consider the affordance of the product to create a better and more natural user experience.'
             .data-diagram-data.col-sm-7.well
-                p= 'Data'
+                .text-center
+                    h4= 'Data'
+                hr
                 .data-diagram-user-data.col-sm-6
-                    p= 'User Data'
+                    .text-center
+                        p= 'User Data'
                     .col-sm-6
                         table.table
                             tr
@@ -73,7 +86,8 @@
                                     p= '(People, articles, banners...)'
                                     p= 'Application usage'
                 .data-diagram-contents-data.col-sm-6
-                    p= 'Contents Data'
+                    .text-center
+                        p= 'Contents Data'
                     .col-sm-6
                         table.table
                             tr
@@ -95,10 +109,11 @@
                                     p= 'Comments'
                                     p= 'Job posts'
             .data-diagram-text.col-sm-5
-                p= 'The data of the product would be categorized into two big sub-categories: \'user data\' and \'contents data\'. Under the user data subcategory, there is user information that users voluntarily provide in the process of sign-up and the setting options. Also, there is acquired data, which the data acquired by learning user behavior that the user does not explicitly provide. Under the contents data subcategory, there is static data that can include a navigation, a banner, an icon, etc., created by the designers. Dynamic data is created by users such as messages, e-mails, comments, job post, etc.'
+                p= 'The data of the product would be categorized into two big sub-categories: \'user data\' and \'contents data\'. Under the user data subcategory, there is user information that users voluntarily provide in the process of sign-up and the setting options. Also, there is acquired data, which is gathered by learning user behavior, which the user does not explicitly provide. Under the contents data subcategory, there is static data that can include a navigation, a banner, an icon, etc., created by the designers. Dynamic data is created by users such as messages, e-mails, comments, job post, etc.'
         .data-and-affordance-affordance-part.row
-            h4= 'Affordance'
-            .affordance-text.col-sm-6
-                p= 'Considering affordances help the designers to specify the range of potential activities of users. Our team decided to use the card layout, which is the type of presenting information with intuitive images. In our application, the list of the chat rooms with only texts can be not intuitive for users to recognize what kind of chat rooms they are. However, with some self-explanatory images and short descriptions with the buttons, the users will get what they want more easily without having to think.'
-            .affordance-images.col-sm-6
-                img.clickToZoomImg(src=paperprotoCommunity, data-action='zoom')
+            h3= 'Affordance'
+            .row
+                .affordance-text.col-sm-6
+                    p= 'Considering affordances help the designers to specify the range of potential activities of users. Our team decided to use the card layout, which is the type of presenting information with intuitive images. In our application, the list of the chat rooms with only texts can be not intuitive for users to recognize what kind of chat rooms they are. However, with some self-explanatory images and short descriptions with the buttons, the users will get what they want more easily without having to think.'
+                .affordance-images.col-sm-6
+                    img.clickToZoomImg(src=paperprotoCommunity, data-action='zoom')
