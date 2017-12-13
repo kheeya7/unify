@@ -1,16 +1,42 @@
 .solution-section-content.container#solution
+    br
+    br
     .col-sm-12
-        h2= 'solution'
-    h3= 'Solution 1: Focusing on "Integraing communication services to reduce the complexity"'
+        .carousel.slide#myCarousel(data-ride="carousel")
+            ol.carousel-indicators
+                li.active(data-target="#myCarousel" data-slide-to="0")
+                li(data-target="#myCarousel" data-slide-to="1")
+                li(data-target="#myCarousel" data-slide-to="2")
+            .carousel-inner
+                .item.active
+                    img(src=slide1 alt='some alt' height='400', width='100%')
+                .item
+                    img(src=slide2 alt='some text' height='400', width='100%')
+                .item
+                    img(src=slide3 alt='some text3' height='400', width='100%')
+            a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left
+            a.right.carousel-control(href='#myCarousel', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right
+    br
+    br
+    .col-sm-12
+        h2= 'Solutions'
+    .row
+        p= 'The Unify team suggests two types of solutions as the team have developed both approaches to have more chances for the ideal solution.'
+    .row
+        h4= 'Solution 1: Focusing on "Integraing communication services to reduce the complexity"'
+        br
     .row
         .col-sm-8.prototype-paper
             img.clickToZoomImg(src=paperProtoPic, data-action='zoom')
-            p= '<Solution 1: The paper prototype showing the micro view of the sign-up process>'
-            p= 'With this solution, the team has tried to solve the one of the main problems that is related to organizational internal tasks. By integrating the all the communication platforms, the stakeholder\'s using, the design tried to resolve the difficulties and complexity of communication.'
+            .text-center
+                p= '<Solution 1: The paper prototype showing the micro view of the sign-up process>'
+            p= 'With this solution, the team has tried to solve one of the main problems that are related to organizational internal tasks. By integrating all the communication platforms, the stakeholder\'s using, the design tried to resolve the difficulties and complexity of communication.'
         .col-sm-4.prototype-team
             iframe(width='438' height='930' src='https://invis.io/AXENDS2FS' frameborder='0' allowfullscreen)
     h3= 'Feedback from the second interviews'
-    p= 'We had 2nd interview with our both stakeholders to test the wireframe of the first solution.'
+    p= 'We had the 2nd set of interviews with both stakeholders to test the wireframe of the first solution.'
     table.table
         tr
             th= 'Cricket Keeting'
@@ -27,17 +53,21 @@
                     li= 'Schedule/calendar features'
                     li= 'Interest-sharing feature'
                     li= 'Secured encrypted messages against online violence'
-                p= '"The way that we would actually use this app is if it was actually it wasn\'t an aggregator, but it was a replacement"(Agloro)'
+                p= '"The way that we would actually use this app is if it wasn\'t an aggregator, but it was a replacement"(Agloro)'
     .row
         .col-sm-6
             iframe(width='560' height='315' src='https://www.youtube.com/embed/tPNdHYoMQB4' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen)
         .col-sm-6
             iframe(width='560' height='315' src='https://www.youtube.com/embed/QeDbs319OmE' frameborder='0' gesture='media' allow='encrypted-media' allowfullscreen)
-    h3= 'Solution 2: Focusing on "Creating connections without having the central hub (Decentralized network)"'
+    br
+    br
+    h4= 'Solution 2: Focusing on "Creating connections without having the central hub (Decentralized network)"'
     .row
         .col-sm-5.prototype-kate
             iframe(width="438" height="930" src="https://invis.io/BMENJHG5C" frameborder="0" allowfullscreen)
         .col-sm-7.prototype-paper-community
+            br
+            br
             img.clickToZoomImg(src=paperProtoPicCom, data-action='zoom')
             p= 'This prototype has a priority on making stronger networks among members by matching users’ similar interests and profiles. So that each member and group have their own networks to other members and groups without passing the center hub of the community.'
-            p= 'The key features of using these data are in the community section. After the user signs up the application, they will see these suggestions that are sorted by their interests and profiles. Once they join in several communities, now they can see the list of their groups. Also, they can see the list of friends on the friend\'s tab. Not only that, they can also see a list of people who have similar interests. They can initiate the chat group (or channel) and can invite these people who have similar interests and passions on the topic.'
+            p= 'TThe key features of using these data are in the community section. After the user signs up for the application, they will see these suggestions that are sorted by their interests and profiles. Once they join in several communities, now they can see the list of their groups. Also, they can see the list of friends on the friend\'s tab. Not only that, they can also see a list of people who have similar interests. They can initiate the chat group (or channel) and can invite these people who have similar interests and passions on the topic.'

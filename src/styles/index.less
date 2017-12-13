@@ -16,7 +16,7 @@
     font-weight: 300;
 }
 
-@accent-color-light: rgb(255, 239, 235);
+@accent-color-light: rgb(255, 246, 237);
 @accent-color: rgb(252, 123, 89);
 @accent-color-dark: rgb(200, 150, 165);
 
@@ -24,28 +24,41 @@
 html,
 body {
     height: 100%;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
+    p {
+        line-height: 2.0;
+    }
 }
 .rootpage-container {
     font-family: 'OpenSans', sans-serif;
     h1 {
         font-family: 'Satisfy Regular';
         font-size: 64px;
-        padding-top: 80px;
+        padding-top: 30px;
         padding-bottom: 15px;
     }
     h2 {
         font-family: 'OpenSans';
         font-weight: lighter;
         font-size: 26px;
+        padding-top: 60px;
         padding-bottom: 20px;
         text-align: center;
     }
     h3 {
         padding-top: 30px;
-        padding-bottom: 15px;
         font-family: 'CrimsonText Regular';
+        font-size: 23px;
     }
+    h3.h3-no-top-margin {
+        padding-top: 0px;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+ 
     .font-weight-bold {
         font-weight: bold;
         padding-top: 5px;
@@ -79,6 +92,7 @@ body {
             width: 100%;
             position: static;
             top: -32px;
+            border-radius: 0px;
             .navbar-header {
                 font-family: 'Satisfy Regular';
             }
@@ -124,7 +138,10 @@ body {
                 margin-bottom: 2px;
             }
             .overview-item {
-                padding-bottom: 10px;
+                padding-bottom: 20px;
+                p {
+                    line-height: 1.2;
+                }
             }
         }
     }
@@ -162,11 +179,23 @@ body {
             }
         }
         .other-persona {
-            background: rgb(221, 209, 215);
             padding: 20px;
             img {
                 margin: 5px;
             }
+        }
+        .data-diagram-data {
+            p {
+                line-height: 1.2;
+            }
+            col-sm-6 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            padding-bottom: 0px;
+        }
+        .data-diagram-text {
+            padding-top: 60px;
         }
     }
 
@@ -177,15 +206,27 @@ body {
                 margin-top: 15px;
                 margin-bottom: 50px;
             }
+            P:first-of-type {
+                margin-top: 80px;
+            }
         }
         table {
-            font-size: 14px;
+            font-size: 15px;
             th {
                 width: 50%;
             }
             td {
                 padding: 15px;
             }
+        }
+        .prototype-paper {
+            margin-left: -15px;
+        }
+    }
+
+    .reflection-section-content {
+        li {
+            line-height: 2.0;
         }
     }
 
