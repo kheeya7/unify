@@ -1,6 +1,7 @@
 import 'bootstrap-webpack';
 import jQuery from 'jquery';
 import './styles/index.less';
+import './styles/minimal-lightbox.css';
 import { Rootpage } from './rootpage/view.js';
 
 window.$ = window.jQuery = jQuery;

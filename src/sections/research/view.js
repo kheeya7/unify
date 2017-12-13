@@ -7,6 +7,7 @@ import personaPic3 from './pic-polly.png';
 import personaPic4 from './pic-ellie.png';
 import interviewPic from './interviewpictures1920x900.jpg';
 import paperprotoCommunity from './paper-proto-community.jpg';
+import minimalLightbox from 'minimal-lightbox';
 
 export class Research extends Backbone.View {
     render() {
@@ -19,6 +20,11 @@ export class Research extends Backbone.View {
             interviewPic,
             paperprotoCommunity
         }));
+
+        try {
+            minimalLightbox(this.$('.clickToZoomImg'));
+        } catch (e) {
+        }
 
         return this;
     }

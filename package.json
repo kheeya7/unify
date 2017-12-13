@@ -9,6 +9,7 @@
     "bootstrap-webpack": "0.0.6",
     "jquery": "^3.2.1",
     "less": "^2.7.3",
+    "minimal-lightbox": "^1.1.0",
     "webpack": "^3.8.1"
   },
   "devDependencies": {
