@@ -1,4 +1,25 @@
 .solution-section-content.container#solution
+    br
+    br
+    .col-sm-12
+        .carousel.slide#myCarousel(data-ride="carousel")
+            ol.carousel-indicators
+                li.active(data-target="#myCarousel" data-slide-to="0")
+                li(data-target="#myCarousel" data-slide-to="1")
+                li(data-target="#myCarousel" data-slide-to="2")
+            .carousel-inner
+                .item.active
+                    img(src=slide1 alt='some alt' height='400', width='100%')
+                .item
+                    img(src=slide2 alt='some text' height='400', width='100%')
+                .item
+                    img(src=slide3 alt='some text3' height='400', width='100%')
+            a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left
+            a.right.carousel-control(href='#myCarousel', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right
+    br
+    br
     .col-sm-12
         h2= 'Solutions'
     .row
